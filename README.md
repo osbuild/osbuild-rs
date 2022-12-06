@@ -1,19 +1,49 @@
-# osbuild-rs
+osbuild-rs
+==========
 
-`osbuild-rs` is a reimplementation of [osbuild](https://github.com/osbuild/osbuild) and provides build pipelines for operating systems. The [osbuild project](https://osbuild.org) deals with building operating systems, `osbuild-rs` is the lowest level of multiple projects involved.
+Build-Pipelines for Operating System Artifacts in Rust
 
-> OSBuild is a pipeline-based build system for operating system artifacts. It defines a universal pipeline description and a build system to execute them, producing artifacts like operating system images, working towards an image build pipeline that is more comprehensible, reproducible, and extendable.
+The osbuild-rs project provides native access to build-pipelines for
+operating system artifacts from within the Rust programming language. It is
+used by OSBuild to run the pipeline engine and implement the individual
+stages of the build process.
 
-## Project
+See the [OSBuild Project](https://github.com/osbuild/osbuild) for information
+on how to access and invoke build-pipelines, as well as further information
+on integration into the wider OSBuild Ecosystem.
 
-* **Website**: <https://osbuild.org>
-* **Bugtracker**: <https://github.com/osbuild-rs/osbuild/issues>
-* **IRC**: #osbuild on [Libera.Chat](https://libera.chat/)
+### Project
 
-## Repository
-* **WWW**: <https://github.com/osbuild/osbuild-rs>
-* **HTTPS** <https://github.com/osbuild/osbuild-rs.git>
-* **SSH**: git@github.com:osbuild/osbuild.git
+ * **Website**: <https://www.osbuild.org>
+ * **Bug Tracker**: <https://github.com/osbuild/osbuild-rs/issues>
+ * **IRC**: #osbuild on [Libera.Chat](https://libera.chat/)
+ * **Changelog**: <https://github.com/osbuild/osbuild-rs/releases>
 
-## License
-Apache-2.0, see LICENSE file for details.
+### Requirements
+
+The runtime requirements for this project are:
+
+ * `none`
+
+At build-time, the following software is required:
+
+ * `rust >= 1.64.0`
+
+### Build
+
+To build this project, run:
+
+```sh
+cargo build
+```
+
+### Repository:
+
+ - **web**:   <https://github.com/osbuild/osbuild-rs>
+ - **https**: `https://github.com/osbuild/osbuild-rs.git`
+ - **ssh**:   `git@github.com:osbuild/osbuild-rs.git`
+
+### License:
+
+ - **Apache-2.0**
+ - See LICENSE file for details.
