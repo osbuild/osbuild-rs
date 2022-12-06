@@ -1,7 +1,25 @@
 [package]
 name = "osbuild"
 version = "0.1.0"
+
+categories = [
+        "compilers",
+        "development-tools",
+        "filesystem",
+        "os",
+        "virtualization",
+]
+description = "Build-Pipelines for Operating System Artifacts"
 edition = "2021"
-description = "`osbuild` library."
+homepage = "https://www.osbuild.org"
+keywords = [
+        "artifacts",
+        "assembler",
+        "build",
+        "pipelines",
+        "os",
+]
+license = "Apache-2.0"
+repository = "https://github.com/osbuild/osbuild-rs"
 
 [dependencies]
