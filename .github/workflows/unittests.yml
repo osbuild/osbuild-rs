@@ -1,0 +1,23 @@
+name: "Unit Tests"
+
+on:
+  pull_request:
+    branches: [ "main" ]
+  push:
+    branches: [ "main", "wip/**" ]
+
+env:
+  CARGO_TERM_COLOR: always
+
+jobs:
+  rust-unittests:
+    name: "Rust Unit Tests"
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: "Fetch Sources"
+      uses: actions/checkout@v3
+    - name: "Build Crates"
+      run: cargo build --all-targets --verbose --workspace
+    - name: "Run Tests"
+      run: cargo test --all-targets --verbose --workspace
